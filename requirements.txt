@@ -1,0 +1,5 @@
+bleak
+numpy
+bitarray
+scipy
+matplotlib
