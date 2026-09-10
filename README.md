@@ -7,10 +7,11 @@ streaming mode.
 
 ## Features
 
-- `polar.py` — the library. Organized into four namespace classes:
-  `Driver` (BLE connection and SDK-mode streaming), `Live` (live plotting and
-  saving of a stream), `Record` (reading and plotting a recorded session),
-  and `Tools` (signal processing helpers).
+- `polar/` — the library, one module per concern:
+  - `driver.py` — `Driver`: BLE connection and SDK-mode streaming.
+  - `live.py` — `Live`: live plotting and saving of a stream.
+  - `record.py` — `Record`: reading and plotting a recorded session.
+  - `tools.py` — `Tools`: signal processing helpers.
 - `capture.py` — scans for nearby Polar Sense devices, connects
   automatically, enables SDK streaming mode, and simultaneously records
   PPG/ACC/GYR data (and connection logs) to disk and live-plots it.
